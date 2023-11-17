@@ -16,18 +16,18 @@
 #define DEFAULT_BUFLEN 512
 #define DEFAULT_PORT "27015"
 
-int __cdecl main(int argc, char **argv) 
+int __cdecl main(int argc, char **argv)
 {
     WSADATA wsaData;
     SOCKET ConnectSocket = INVALID_SOCKET;
     struct addrinfo *result = NULL,
-                    *ptr = NULL,
-                    hints;
+            *ptr = NULL,
+            hints;
     const char *sendbuf = "this is a test";
     char recvbuf[DEFAULT_BUFLEN];
     int iResult;
     int recvbuflen = DEFAULT_BUFLEN;
-    
+
     // Validate the parameters
     if (argc != 2) {
         printf("usage: %s server-name\n", argv[0]);
@@ -58,10 +58,10 @@ int __cdecl main(int argc, char **argv)
     for(ptr=result; ptr != NULL ;ptr=ptr->ai_next) {
 
         // Create a SOCKET for connecting to server
-        ConnectSocket = socket(ptr->ai_family, ptr->ai_socktype, 
-            ptr->ai_protocol);
+        ConnectSocket = socket(ptr->ai_family, ptr->ai_socktype,
+                               ptr->ai_protocol);
         if (ConnectSocket == INVALID_SOCKET) {
-            printf("socket failed with error: %d\n", WSAGetLastError());
+            printf("socket failed with error: %ld\n", WSAGetLastError());
             WSACleanup();
             return 1;
         }
@@ -93,7 +93,7 @@ int __cdecl main(int argc, char **argv)
         return 1;
     }
 
-    printf("Bytes Sent: %d\n", iResult);
+    printf("Bytes Sent: %ld\n", iResult);
 
     // shutdown the connection since no more data will be sent
     iResult = shutdown(ConnectSocket, SD_SEND);
