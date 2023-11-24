@@ -65,7 +65,7 @@ build CMakeFiles/code.dir/client.c.obj: C_COMPILER__code_unscanned_Debug C$:/Use
 
 build code.exe: C_EXECUTABLE_LINKER__code_Debug CMakeFiles/code.dir/client.c.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lwsock32  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\code.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
