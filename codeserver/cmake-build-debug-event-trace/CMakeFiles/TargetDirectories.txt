@@ -1,0 +1,3 @@
+C:/Users/markd/OneDrive - HAN/school/datacom/DCML2-s3-Mark-Joris/code/cmake-build-debug-event-trace/CMakeFiles/code.dir
+C:/Users/markd/OneDrive - HAN/school/datacom/DCML2-s3-Mark-Joris/code/cmake-build-debug-event-trace/CMakeFiles/edit_cache.dir
+C:/Users/markd/OneDrive - HAN/school/datacom/DCML2-s3-Mark-Joris/code/cmake-build-debug-event-trace/CMakeFiles/rebuild_cache.dir
