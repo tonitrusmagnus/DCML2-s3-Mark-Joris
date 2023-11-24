@@ -11,6 +11,7 @@
 
 int main(int argc, char *argv[])
 {
+    printf("client started\n");
     int sockfd = 0, n = 0;
     char recvBuff[1024];
     struct sockaddr_in serv_addr;

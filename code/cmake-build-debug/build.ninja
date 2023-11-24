@@ -49,8 +49,8 @@ cmake_ninja_workdir = C$:/Users/markd/OneDrive$ -$ HAN/school/datacom/DCML2-s3-M
 
 build cmake_object_order_depends_target_code: phony || CMakeFiles/code.dir
 
-build CMakeFiles/code.dir/client.c.obj: C_COMPILER__code_unscanned_Debug C$:/Users/markd/OneDrive$ -$ HAN/school/datacom/DCML2-s3-Mark-Joris/code/client.c || cmake_object_order_depends_target_code
-  DEP_FILE = CMakeFiles\code.dir\client.c.obj.d
+build CMakeFiles/code.dir/server.c.obj: C_COMPILER__code_unscanned_Debug C$:/Users/markd/OneDrive$ -$ HAN/school/datacom/DCML2-s3-Mark-Joris/code/server.c || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\server.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\code.dir
   OBJECT_FILE_DIR = CMakeFiles\code.dir
@@ -63,7 +63,7 @@ build CMakeFiles/code.dir/client.c.obj: C_COMPILER__code_unscanned_Debug C$:/Use
 #############################################
 # Link the executable code.exe
 
-build code.exe: C_EXECUTABLE_LINKER__code_Debug CMakeFiles/code.dir/client.c.obj
+build code.exe: C_EXECUTABLE_LINKER__code_Debug CMakeFiles/code.dir/server.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lwsock32  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\code.dir
